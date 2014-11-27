@@ -3,11 +3,13 @@
  * Datum:           21.November 2014
  * Fach:            Programmieren
  * Dozent:          Herr Schönland
- * Aufgabe:         Erstelle ein Programm welches dem Benutzer zufällige Rechenaufgaben (momentan nur
- *                  mit dem Operator "plus") stellt welche dann vom Benutzer errechnet werden und das 
+ * Aufgabe:         Erstelle ein Programm welches dem Benutzer zufällige Rechenaufgaben 
+ *                  stellt welche dann vom Benutzer errechnet werden und das 
  *                  Ergebnis vom Programm überprüft wird. 
  *          
- * Funktionsweise:  Bei richtiger Lösung gibt es 1 Punkt.
+ * Funktionsweise:  Zufällige Zahlen zum Rechnen und zufällige Rechenoperatoren.
+ *                  Ergebnis wird vom Programm überprüft.
+ *                  Bei richtiger Lösung gibt es 1 Punkt.
  *                  Bei falscher Lösung hat man insgesamt 3 Versuche diese richtig zuerrechnen 
  *                  ansonsten gibt es einen halben Punkt abzug.
  *                  
@@ -146,22 +148,8 @@ namespace Kopfrechenprogramm
 
                     }
 
-                    /*if (mein_ergebnis != ergebnis)
-                    {
-                        Console.WriteLine("\nDu hast 3 mal das Falsche Ergebnis eingegeben das Richtige Ergebnis für \ndie Aufgabe " + zahl1 + " + " + zahl2 + " lautet: " + ergebnis);
-                        Console.WriteLine("          ========== >DRÜCKE EINE BELIEBIGE TASTE ZUM FORTFAHREN< ==========           ");
-                        punkte--;
-                    }
-
-                    else
-                    {
-                        Console.WriteLine("\nDu hast 3 mal das Falsche Ergebnis eingegeben das Richtige Ergebnis für \ndie Aufgabe " + zahl1 + " + " + zahl2 + " lautet: " + ergebnis);
-                        Console.WriteLine("          ========== >DRÜCKE EINE BELIEBIGE TASTE ZUM FORTFAHREN< ==========           ");
-                        punkte--;
-                    }*/
                     versuche = 1;
                     versuch = 1;
-                    /*caseswitch = 0;*/
                 }
 
                 Console.ReadKey();
