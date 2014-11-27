@@ -92,24 +92,24 @@ namespace Kopfrechenprogramm
 
                 Console.WriteLine("");
                 Console.WriteLine("          =============> Spieler: " + username + " | Punkte: " + punkte + " <=============          ");  //Ausgabe von "username" und "punkte"
-                Console.WriteLine("Versuch " + versuch + " von 3!");                                                                    //Ausgabe von "versuch"
-                Console.Write("****> " + zahl1 + " " + rechenzeichen + " " + zahl2 + " = ");                                            //Zufällige Zahlen und Rechenzeichen Ausgegeben
-                mein_ergebnis = Convert.ToDouble(Console.ReadLine());                                                                   //Warte auf Eingabe und Konvertiere zu double
-                versuch++;
+                Console.WriteLine("Versuch " + versuch + " von 3!");                                                                        //Ausgabe von "versuch"
+                Console.Write("****> " + zahl1 + " " + rechenzeichen + " " + zahl2 + " = ");                                                //Zufällige Zahlen und Rechenzeichen Ausgegeben
+                mein_ergebnis = Convert.ToDouble(Console.ReadLine());                                                                       //Warte auf Eingabe und Konvertiere zu double
+                versuch++;                                                                                                                  //Erhöhe versuch=0:int; um 1
 
-            Richtig:
-                if (mein_ergebnis == ergebnis)
+            Richtig:                                                                                                                        //Auf diesen Ankerpunkt wird verwiesen wenn die Lösung Richtig war
+                if (mein_ergebnis == ergebnis)                                                                                              //Abfrage wenn mein_ergebnis gleich ergebnis
                 {
-                    Console.WriteLine("Dein Ergebnis " + mein_ergebnis + " ist Richtig!");
-                    Console.WriteLine("          ========== >NEUE AUFGABE< ==========           ");
-                    Console.Beep(2500, 200);
-                    punkte++;
-                    goto Anfang;
+                    Console.WriteLine("Dein Ergebnis " + mein_ergebnis + " ist Richtig!");                                                  //Ausgabe
+                    Console.WriteLine("          ========== >NEUE AUFGABE< ==========           ");                                         //Ausgabe
+                    Console.Beep(2500, 200);                                    //Spiele einen Ton ab
+                    punkte++;                                                   //Erhöhe punkte=0:int; um 1
+                    goto Anfang;                                                //Gehe zum Anker "Anfang"
                 }
                 else
                 {
-                Wiederholen:
-                    while (versuche <= 2)
+                Wiederholen:                                                    //Auf diesen Ankerpunkt wird verwiesen wenn die Lösung Falsch war und versuche übrig sind
+                    while (versuche <= 2)                                                                                       
                     {
                         if (mein_ergebnis == ergebnis)
                         {
