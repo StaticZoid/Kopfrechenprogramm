@@ -59,7 +59,9 @@ namespace Kopfrechenprogramm
             {
                 //Initialisierung und Deklaration von Variablen innerhalb der Endlosschleife
                 char rechenzeichen = '?';                           //rechenzeichen wird als character deklariert und "?" als platzhalter genutzt
-                double zahl1, zahl2, mein_ergebnis;                 //zahl1, zahl2 und mein_ergebnis können dezimalzahlen sein
+                double zahl1, zahl2;                                //zahl1, zahl2 und mein_ergebnis können dezimalzahlen sein
+                double meine_eingabe;
+
                 double ergebnis = 0;                                //ergebnis darf eine dezimalzahl sein >>>> momentan noch auf keine nachkommastellen begrenzt WIP <<<<<<
 
                 zahl1 = zufall.Next(1, 100 + 1);                    //Generiere Zufallswert für zahl1
@@ -88,13 +90,16 @@ namespace Kopfrechenprogramm
 
                 int versuche = 1;                                   //Hier werden die Versuche die man brauchte gezählt
                 int versuch = 1;                                    //Hier wird gezählt beim wie vielten Versuch man sich grade befindet
-
+                double mein_ergebnis = 0;              
 
                 Console.WriteLine("");
                 Console.WriteLine("          =============> Spieler: " + username + " | Punkte: " + punkte + " <=============          ");  //Ausgabe von "username" und "punkte"
                 Console.WriteLine("Versuch " + versuch + " von 3!");                                                                        //Ausgabe von "versuch"
                 Console.Write("****> " + zahl1 + " " + rechenzeichen + " " + zahl2 + " = ");                                                //Zufällige Zahlen und Rechenzeichen Ausgegeben
-                mein_ergebnis = Convert.ToDouble(Console.ReadLine());                                                                       //Warte auf Eingabe und Konvertiere zu double
+                if (double.TryParse(Console.ReadLine(), out meine_eingabe))
+                    mein_ergebnis = meine_eingabe;                                                                                           //Warte auf Eingabe und Konvertiere zu double
+                else
+                    Console.WriteLine("Gebe bitte eine Zahl ein!", Console.ReadLine());
                 versuch++;                                                                                                                  //Erhöhe versuch=0:int; um 1
 
             Richtig:                                                                                                                        //Auf diesen Ankerpunkt wird verwiesen wenn die Lösung Richtig war
@@ -124,7 +129,10 @@ namespace Kopfrechenprogramm
                             Console.WriteLine("          =============> Spieler: " + username + " | Punkte: " + punkte + " <=============          ");
                             Console.WriteLine("Versuch " + versuch + " von 3!");
                             Console.Write("****> " + zahl1 + " " + rechenzeichen + " " + zahl2 + " = ");
-                            mein_ergebnis = Convert.ToDouble(Console.ReadLine());
+                            if (double.TryParse(Console.ReadLine(), out meine_eingabe))
+                                mein_ergebnis = meine_eingabe;                                                                                           //Warte auf Eingabe und Konvertiere zu double
+                            else
+                                Console.WriteLine("Gebe bitte eine Zahl ein!", Console.ReadLine());
                             versuche++;
                             versuch++;
 

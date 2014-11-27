@@ -1,1 +1,6 @@
 C:\Users\Sven\Documents\GitHub\Schule\Kopfrechenprogramm\Kopfrechenprogramm\Kopfrechenprogramm\bin\Debug\Kopfrechenprogramm.exe.config
+C:\Users\Sven\Documents\GitHub\Schule\Kopfrechenprogramm\Kopfrechenprogramm\Kopfrechenprogramm\bin\Debug\Kopfrechenprogramm.exe
+C:\Users\Sven\Documents\GitHub\Schule\Kopfrechenprogramm\Kopfrechenprogramm\Kopfrechenprogramm\bin\Debug\Kopfrechenprogramm.pdb
+C:\Users\Sven\Documents\GitHub\Schule\Kopfrechenprogramm\Kopfrechenprogramm\Kopfrechenprogramm\obj\Debug\Kopfrechenprogramm.csprojResolveAssemblyReference.cache
+C:\Users\Sven\Documents\GitHub\Schule\Kopfrechenprogramm\Kopfrechenprogramm\Kopfrechenprogramm\obj\Debug\Kopfrechenprogramm.exe
+C:\Users\Sven\Documents\GitHub\Schule\Kopfrechenprogramm\Kopfrechenprogramm\Kopfrechenprogramm\obj\Debug\Kopfrechenprogramm.pdb
