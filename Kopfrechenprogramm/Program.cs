@@ -1,4 +1,5 @@
 ﻿/*
+ * Organisation:    StaticZoid
  * Author:          Sven Ebensen und Leon Jockschies
  * Datum:           21.November 2014
  * Fach:            Programmieren
